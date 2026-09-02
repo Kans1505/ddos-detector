@@ -1,4 +1,4 @@
-name: Tests & Deploy
+name: Tests
 on: [push]
 jobs:
   test:
@@ -8,13 +8,3 @@ jobs:
       - uses: actions/setup-python@v4
       - run: pip install pytest
       - run: pytest
-  
-  deploy:
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: renderinc/github-action-render-branch-deploy@v1
-        env:
-          RENDER_API_KEY: ${{ secrets.RENDER_DEPLOY_KEY }}
-          RENDER_SERVICE_ID: srv-dabujqnavr4c73aru1eg
