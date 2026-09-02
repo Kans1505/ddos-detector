@@ -329,4 +329,4 @@ elif mode == "Model Comparison":
     st.success("IsolationForest is optimal for this use case!")
 
 st.divider()
-st.caption("DDoS Attack Detection System | 90% Precision | 87.8% Recall | Real-time Monitoring")
+st.caption("DDoS Attack Detection System | 91% Precision | 87.8% Recall | Real-time Monitoring")
