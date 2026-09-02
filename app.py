@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import plotly.graph_objects as go
-import numpy as np
+import numpy as nP
 from datetime import datetime
 import json
 import os
@@ -22,10 +22,7 @@ if 'history' not in st.session_state:
 if 'alerts' not in st.session_state:
     st.session_state.alerts = []
 
-# Header
-st.markdown("""
-<div style="text-align: center; margin-bottom: 2rem;">
-    <h1 style="color: #FF6B6B; font-size: 3.5rem; font-weight: 900; margin: 0;">DDoS ATTACK DETECTOR</h1>
+# Header<h1 style="color: #FF6B6B; font-size: 3.5rem; font-weight: 900; margin: 0;">🔴 DDoS ATTACK DETECTOR 🔴</h1>
     <p style="color: white; font-size: 1.2rem; margin-top: 0.5rem;">Real-Time Network Anomaly Detection System</p>
 </div>
 """, unsafe_allow_html=True)
